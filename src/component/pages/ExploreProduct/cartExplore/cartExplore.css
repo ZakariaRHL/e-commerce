@@ -1,0 +1,16 @@
+.box-cart-explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 270px;
+  height: 322px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+.btn-explore-buy {
+  display: none;
+}
+
+.box-cart-explore:hover .btn-explore-buy {
+  display: block;
+}

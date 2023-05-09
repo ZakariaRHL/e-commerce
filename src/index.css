@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  justify-content: space-between;
+  overflow-y: scroll; /* add scroll to enable scrolling */
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none; /* hide scrollbar for webkit browsers */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+link {
+  text-decoration: "none";
+}

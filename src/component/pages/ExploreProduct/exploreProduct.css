@@ -1,0 +1,20 @@
+.all-explore {
+  margin-top: 40px;
+}
+.items-all {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+.btn-allpro {
+  display: flex;
+  justify-content: space-around;
+}
+.all-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

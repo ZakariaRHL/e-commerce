@@ -1,0 +1,50 @@
+.carousel {
+  width: 70%;
+  height: 100%;
+  margin-top: 100px;
+}
+
+/* Set the background color of the carousel */
+.carousel .slide {
+  background-color: #f5f5f5;
+}
+
+/* Set the size of the carousel arrows */
+.carousel .control-arrow {
+  font-size: 24px;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: -30px;
+}
+
+/* Set the color of the carousel arrows on hover */
+.carousel .control-arrow:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+/* Set the size of the carousel indicators */
+.carousel .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* Set the color of the selected carousel indicator */
+.carousel .dot.selected {
+  background-color: #fff;
+}
+
+/* Set the font size and color of the carousel captions */
+.carousel .legend {
+  font-size: 18px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  margin-top: -50px;
+}

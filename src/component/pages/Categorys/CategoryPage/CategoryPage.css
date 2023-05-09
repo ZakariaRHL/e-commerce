@@ -1,0 +1,21 @@
+.cate-products {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+}
+.loading-spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all-category-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
