@@ -1,19 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import ProductCard from "../../Cards/ProductsCard/ProductCard";
 import axios from "axios";
 import Categories from "../Categorys/Categories";
 
 const ExploreProduct = () => {
-  const [product, setProduct] = useState([]);
+  const [products, setProducts] = useState([]);
 
+  // Fetch products function
+  const fetchProducts = async () => {
+    const response = await axios.get(`https://fakestoreapi.com/products`);
+    setProducts(response.data);
+  };
+
+  // Fetch initial products
   useEffect(() => {
-    axios
-      .get("https://fakestoreapi.com/products")
-      .then((response) => {
-        const data = response.data;
-        setProduct(data);
-      })
-      .catch((error) => console.log(error));
+    fetchProducts();
+    console.log("fetshing all products");
   }, []);
 
   return (
@@ -21,7 +23,7 @@ const ExploreProduct = () => {
       <Categories />
       <div className="all-product">
         <div className="items-all">
-          {product.map((item) => (
+          {products.map((item) => (
             <ProductCard data={item} key={item.id} />
           ))}
         </div>

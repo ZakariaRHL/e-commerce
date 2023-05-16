@@ -6,16 +6,23 @@ import CartItems from "./CartItems/CartItems";
 const CardDetails = () => {
   const [product, setProduct] = useState([]);
   const { id } = useParams();
+  console.log("im here");
 
   useEffect(() => {
+    let isCanceled = false;
     axios
       .get(`https://fakestoreapi.com/products/${id}`)
       .then((response) => {
-        console.log("res", response.data);
-        setProduct(response.data);
+        if (!isCanceled) {
+          setProduct(response.data);
+          console.log("fetching details card");
+        }
       })
       .catch((error) => console.log(error));
-    console.log("st", product);
+
+    return () => {
+      isCanceled = true;
+    };
   }, [id]);
 
   return (

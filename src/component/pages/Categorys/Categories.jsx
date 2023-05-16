@@ -14,6 +14,7 @@ const Categories = () => {
           return { id: index + 1, name: category };
         });
         setCategory(categories);
+        console.log("fetching categories");
       })
       .catch((error) => console.log(error));
   }, []);
